@@ -1,12 +1,12 @@
 <main class="paquetes">
     <h2 class="paquetes__heading"><?php echo $titulo ?></h2>
-    <p class="paquetes__descripcion">Compara los paquetes de DevWebCamp</p>
+    <p class="paquetes__descripcion">Compara los paquetes de MetropolitanWebCamp</p>
 
     <div class="paquetes__grid">
         <div class="paquete">
             <h3 class="paquete__nombre">Pase Gratis</h3>
             <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Virtual a DevWebCamp</li>
+                <li class="paquete__elemento">Acceso Virtual a MetropolitanWebCamp</li>
             </ul>
 
             <p class="paquete__precio">$0</p>
@@ -15,7 +15,7 @@
         <div class="paquete">
             <h3 class="paquete__nombre">Pase Presencial</h3>
             <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Presencial a DevWebCamp</li>
+                <li class="paquete__elemento">Acceso Presencial a MetropolitanWebCamp</li>
                 <li class="paquete__elemento">Pase por 2 días</li>
                 <li class="paquete__elemento">Acceso a talleres y conferencias</li>
                 <li class="paquete__elemento">Acceso a las grabaciones</li>
@@ -29,7 +29,7 @@
         <div class="paquete">
             <h3 class="paquete__nombre">Pase Virtual</h3>
             <ul class="paquete__lista">
-                <li class="paquete__elemento">Acceso Virtual a DevWebCamp</li>
+                <li class="paquete__elemento">Acceso Virtual a MetropolitanWebCamp</li>
                 <li class="paquete__elemento">Pase por 2 días</li>
                 <li class="paquete__elemento">Acceso a talleres y conferencias</li>
                 <li class="paquete__elemento">Acceso a las grabaciones</li>

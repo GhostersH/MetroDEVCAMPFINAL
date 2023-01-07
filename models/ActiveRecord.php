@@ -151,6 +151,22 @@ class ActiveRecord {
         return $resultado;
     }
 
+
+    //PONENTE CON MAS EVENTOS
+    public static function ponenteEvento() {
+        $query = "SELECT count(p.id) as c, p.nombre FROM metrodb.ponentes as p INNER JOIN eventos as e 
+        ON p.id =e.ponente_id  group by p.nombre order by c desc"; 
+        
+        $resultado = self::consultarSQL($query);
+
+        echo  $resultado;
+        return $resultado;
+
+
+    }
+
+
+
     // Busqueda Where con Múltiples opciones
     public static function whereArray($array = []) {
         $query = "SELECT * FROM " . static::$tabla . " WHERE ";

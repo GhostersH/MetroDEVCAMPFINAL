@@ -30,15 +30,18 @@
             <?php } ?>
         </div>
 
+    
         <div class="bloque">
-            <h3 class="bloque__heading">Eventos Con Más Lugares Disponibles</h3>
-            <?php foreach($mas_disponibles as $evento) { ?>
+            <h3 class="bloque__heading">Ponentes con mas eventos</h3>
+            <?php print_r($ponentes_eventos)?>
                 <div class="bloque__contenido">
                     <p class="bloque__texto">
-                        <?php echo $evento->nombre . " - " . $evento->disponibles . ' Disponibles'; ?>
+                       
                     </p>
                 </div>
-            <?php } ?>
+            <?php  ?>
         </div>
+
+        
     </div>
 </main>

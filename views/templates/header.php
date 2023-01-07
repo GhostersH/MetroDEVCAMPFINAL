@@ -31,7 +31,7 @@
     <div class="barra__contenido">
         <a href="/">
             <h2 class="barra__logo">
-                &#60;DevWebCamp />
+                &#60;MetropolitanWebCamp />
             </h2>
         </a>
         <nav class="navegacion">

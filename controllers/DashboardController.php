@@ -3,6 +3,7 @@
 namespace Controllers;
 
 use Model\Evento;
+use Model\Ponente;
 use Model\Registro;
 use Model\Usuario;
 use MVC\Router;
@@ -28,12 +29,17 @@ class DashboardController {
         $mas_disponibles = Evento::ordenarLimite('disponibles', 'DESC', 5);
 
 
+       //Obetener ponentes con mas eventos
+       $ponentes_eventos = Ponente::ponenteEvento();
+
+
         $router->render('admin/dashboard/index', [
             'titulo' => 'Panel de Administración',
             'registros' => $registros,
             'ingresos' => $ingresos,
             'menos_disponibles' => $menos_disponibles,
-            'mas_disponibles' => $mas_disponibles
+            'mas_disponibles' => $mas_disponibles,
+            'ponentes_eventos' => $ponentes_eventos
         ]);
     }
 }
